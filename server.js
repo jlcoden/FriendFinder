@@ -17,6 +17,8 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static("public"));
+
 //include api route file in server
 require("./app/routing/apiRoutes.js")(app);
 //include route file in server
