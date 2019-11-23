@@ -10,13 +10,13 @@ var friendsArray = [
   {
     name: "Jon Snow",
     photo:
-      "https://en.wikipedia.org/wiki/Jon_Snow_(character)#/media/File:Jon_Snow_Season_8.png",
+      "https://pbs.twimg.com/profile_images/610317350529662976/f3lLBQeH.jpg",
     scores: [5, 5, 1, 2, 3, 3, 2, 5, 2, 4]
   },
   {
     name: "Tyrion Lanister",
     photo:
-      "https://en.wikipedia.org/wiki/Tyrion_Lannister#/media/File:Tyrion_Lannister-Peter_Dinklage.jpg",
+      "https://pbs.twimg.com/profile_images/589936768335634432/LebGvyCB_400x400.jpg",
     scores: [3, 5, 2, 3, 5, 3, 5, 3, 1, 3]
   },
   {
@@ -28,7 +28,7 @@ var friendsArray = [
   {
     name: "Joffrey Baratheon",
     photo:
-      "https://en.wikipedia.org/wiki/Joffrey_Baratheon#/media/File:Joffrey_Baratheon-Jack_Gleeson.jpg",
+      "https://pbs.twimg.com/profile_images/600824977563131904/z_oxmKRA_400x400.jpg",
     scores: [3, 1, 5, 3, 2, 2, 1, 1, 1, 2]
   },
   {
