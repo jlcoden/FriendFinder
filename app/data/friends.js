@@ -4,7 +4,7 @@ var friendsArray = [
   {
     name: "Daenerys Targaryen",
     photo:
-      "https://en.wikipedia.org/wiki/Daenerys_Targaryen#/media/File:Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg",
+      "https://pbs.twimg.com/profile_images/415504827297173504/hhjlnlMg.jpeg",
     scores: [3, 5, 3, 3, 2, 5, 1, 4, 1, 1]
   },
   {
@@ -22,7 +22,7 @@ var friendsArray = [
   {
     name: "Melisandre",
     photo:
-      "https://en.wikipedia.org/wiki/Melisandre#/media/File:Melisandre-Carice_van_Houten.jpg",
+      "https://pbs.twimg.com/profile_images/378800000252129033/d1a31074c567a366bf13d1c52a4ef16d.jpeg",
     scores: [3, 3, 3, 2, 2, 3, 3, 3, 5, 1]
   },
   {
@@ -34,25 +34,25 @@ var friendsArray = [
   {
     name: "Petyr Baelish",
     photo:
-      "https://en.wikipedia.org/wiki/Petyr_Baelish#/media/File:Aidan_Gillen_playing_Petyr_Baelish.jpg",
+      "https://pbs.twimg.com/profile_images/592051322033016832/_elSiW2n.png",
     scores: [2, 3, 3, 5, 5, 3, 4, 3, 1, 2]
   },
   {
     name: "Jamie Lannister",
     photo:
-      "https://en.wikipedia.org/wiki/Jaime_Lannister#/media/File:Jaime_Lannister-Nikolaj_Coster-Waldau.jpg",
+      "https://pbs.twimg.com/profile_images/378800000407011141/022099d28f136a1712aa7f34438e6951.jpeg",
     scores: [2, 5, 1, 5, 3, 2, 3, 3, 1, 5]
   },
   {
     name: "Lord Varys",
     photo:
-      "https://en.wikipedia.org/wiki/Varys#/media/File:Varys-Conleth_Hill.jpg",
+      "https://pbs.twimg.com/profile_images/378800000160376487/85fafd059b3eccb40059d881003fe91f.png",
     scores: [1, 3, 3, 4, 5, 3, 4, 3, 1, 2]
   },
   {
     name: "Eddard Stark",
     photo:
-      "https://en.wikipedia.org/wiki/Ned_Stark#/media/File:Ned_Stark-Sean_Bean.jpg",
+      "https://pbs.twimg.com/profile_images/378800000483457676/1389ee9374678d261c6d67039d3c8460.jpeg",
     scores: [5, 5, 1, 1, 2, 5, 3, 5, 4, 5]
   }
 ];
