@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>FriendFinder</title>
+    <title>GOTFriendFinder</title>
 
     <!-- Latest compiled and minified CSS & JS -->
     <link
@@ -17,6 +17,33 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
     />
+
+    <style>
+      .modal-title {
+        text-align: center;
+      }
+
+      #friendMatchedPhoto {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn-primary {
+        background-color: #b8b8b8;
+        color: black;
+        border-color: black; /*set the color you want here*/
+      }
+      .btn-primary:hover,
+      .btn-primary:focus,
+      .btn-primary:active,
+      .btn-primary.active,
+      .open > .dropdown-toggle.btn-primary {
+        color: black;
+        background-color: #808080;
+        border-color: black; /*set the color you want here*/
+      }
+    </style>
   </head>
 
   <body>
@@ -290,7 +317,9 @@
 
           $.post("/api/friends", newFriend).done(function(data) {
             // Set the name and image values of the matched friend
-            $("#friendMatch").html(data.matchedFriend);
+            var matchText = "You match with: ";
+            var friend = data.matchedFriend;
+            $("#friendMatch").html(matchText + friend);
             $("#friendMatchedPhoto").attr("src", data.matchedPhoto);
           });
         } else {

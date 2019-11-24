@@ -27,6 +27,33 @@
         position: relative;
         left: 10px;
       }
+
+      .container {
+        margin-top: 75px;
+      }
+
+      body {
+        background-image: url("https://wallpapercave.com/wp/wp2021760.jpg");
+        background-repeat: repeat;
+      }
+
+      footer {
+        margin-top: 25px;
+      }
+      .btn-primary {
+        background-color: #b8b8b8;
+        color: black;
+        border-color: black; /*set the color you want here*/
+      }
+      .btn-primary:hover,
+      .btn-primary:focus,
+      .btn-primary:active,
+      .btn-primary.active,
+      .open > .dropdown-toggle.btn-primary {
+        color: black;
+        background-color: #808080;
+        border-color: black; /*set the color you want here*/
+      }
     </style>
   </head>
 
@@ -43,7 +70,7 @@
         </div>
 
         <hr />
-        <h2>Answer a few basic questions.</h2>
+        <h2>Answer a few questions</h2>
         <h2>
           And find out which GOT character or fan you are compatible with!
         </h2>
@@ -58,16 +85,14 @@
             </button></a
           >
         </div>
-      </div>
 
-      <footer class="footer">
-        <div class="container">
+        <footer class="footer">
           <p>
             <a href="/api/friends">API Friends List</a> |
             <a href="https://jlcoden.github.io/FriendFinder/">GitHub Repo</a>
           </p>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
