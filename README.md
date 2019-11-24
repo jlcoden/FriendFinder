@@ -4,38 +4,41 @@ GOT FriendFinder is a compatiblity-based "FriendFinder" that allows you to find 
 
 The application consists of the following code:
 
-home.html
+**home.html**
 
-- ![](home_html.PNG)
+- Is the main page and a default catch-all page for the app
+  ![](home_html.PNG)
 
-survey.html
+**survey.html**
 
-- ![](survey_html.PNG)
+- Is the HTML that contains the survey questions
+  ![](survey_html.PNG)
 
-server.js
+**server.js**
 
-- ![](server_js.PNG)
+- server.js initiates the server and requires express and path npm packages
+  ![](server_js.PNG)
 
-htmlRoutes.js
+**htmlRoutes.js**
 
-- ![](html_routes.PNG)
+- Contains a GET route to the survey, swhich displays the survey page, and has a catch-all route to the home.html page
+  ![](html_routes.PNG)
 
-apiRoutes.js
+**apiRoutes.js**
 
-- ![](api_routes.PNG)
+- apiRoutes.js contains a GET route used to display the JSON of possible friends and contains a POST route with URL /api/friends. This is used to handle compatibility logic
+  ![](api_routes.PNG)
 
 friends.js
 
-- ![](friends_js.PNG)
+- friends.js contains the friend data
+  ![](friends_js.PNG)
 
 **Running the application and navigating to survey**
-![](bamazonCustomer.gif)
+![](accessSurveyAndBegin.gif)
 
-**Enter input, make selections**
-![](notEnoughinStock.gif)
-
-**Submit and see results**
-![](notEnoughinStock.gif)
+**Entering in survey responses and submitting to see results**
+![](submitSurveyGetResults.gif)
 
 **Technologies Used**
 
