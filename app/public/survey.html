@@ -18,17 +18,21 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
     />
 
+    <!--Custom style css-->
     <style>
+      /*styles for modal-title*/
       .modal-title {
         text-align: center;
       }
 
+      /*styles for matched friend photo that is returned*/
       #friendMatchedPhoto {
         text-align: center;
         display: block;
         margin: 0 auto;
       }
 
+      /*styles for submit button*/
       .btn-primary {
         background-color: #b8b8b8;
         color: black;
@@ -46,20 +50,24 @@
     </style>
   </head>
 
+  <!-- body section-->
   <body>
     <div class="container">
       <h2>Survey Questions</h2>
       <hr />
 
       <h3><strong>About You</strong></h3>
+      <!--Request name input-->
       <h4>Name (Required)</h4>
       <input type="text" id="name" class="form-control" required />
 
+      <!--Request link to image input-->
       <h4>Link to Photo Image (Required)</h4>
       <input type="text" id="photo" class="form-control" required />
 
       <hr />
 
+      <!--List of questions-->
       <h3><strong>Question 1</strong></h3>
       <h4>
         Generally, your friends trust you and can count on you to be loyal
@@ -183,11 +191,11 @@
         <option value="4">4</option>
         <option value="5">5 (Strongly Agree)</option>
       </select>
-
+      <!-- End of questions-->
       <br />
       <br />
 
-      <!-- Button trigger modal -->
+      <!-- Button to trigger modal -->
       <button
         type="submit"
         class="btn btn-primary"
@@ -235,23 +243,28 @@
           </div>
         </div>
       </div>
+      <!-- end of modal-->
 
       <hr />
 
+      <!-- footer-->
       <footer class="footer">
         <div class="container">
           <p>
             <a href="/api/friends">API Friends List</a> |
-            <a href="https://jlcoden.github.io/FriendFinder/">GitHub Repo</a>
+            <a href="https://github.com/jlcoden/FriendFinder">GitHub Repo</a>
           </p>
         </div>
       </footer>
     </div>
 
+    <!-- javascript-->
     <script type="text/javascript">
+      // on documen trunning run code
       $(document).ready(function() {});
       // Activate submit button
       $("#submit").on("click", function(event) {
+        //do not submit form
         event.preventDefault();
 
         // Form validation
@@ -315,6 +328,7 @@
             ]
           };
 
+          //post to api/friends and add user as a new friend
           $.post("/api/friends", newFriend).done(function(data) {
             // Set the name and image values of the matched friend
             var matchText = "You match with: ";
@@ -323,7 +337,7 @@
             $("#friendMatchedPhoto").attr("src", data.matchedPhoto);
           });
         } else {
-          // If a required field is not comoplete, throw alert
+          //if does not pass validation throw error
           alert("Survey is not complete!");
         }
       });

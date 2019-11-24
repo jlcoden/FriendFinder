@@ -8,15 +8,11 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-//Original test on if server is working
-//app.get("/", function(req, res) {
-//  res.send("Hello World");
-//});
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//allow static images
 app.use(express.static("public"));
 
 //include api route file in server

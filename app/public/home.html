@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>FriendFinder</title>
 
-    <!-- Latest compiled and minified CSS & JS -->
+    <!-- Compiled CSS & JS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -18,28 +18,34 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
     />
 
+    <!-- Custom style css-->
     <style>
+      /*styles for image in header*/
       .header img {
         float: left;
       }
-
+      /*styles for h1 in header*/
       .header h1 {
         position: relative;
         left: 10px;
       }
 
+      /*styles for container div*/
       .container {
         margin-top: 75px;
       }
-
+      /*styles for body*/
       body {
         background-image: url("https://wallpapercave.com/wp/wp2021760.jpg");
         background-repeat: repeat;
       }
 
+      /*styles for footer*/
       footer {
         margin-top: 25px;
       }
+
+      /*styles for button*/
       .btn-primary {
         background-color: #b8b8b8;
         color: black;
@@ -57,15 +63,18 @@
     </style>
   </head>
 
+  <!-- Body section-->
   <body>
     <div class="container">
       <div class="jumbotron">
         <div class="header">
+          <!--GOT icon image in header and title-->
           <img
             src="http://icons.iconarchive.com/icons/limav/game-of-thrones/256/Stark-icon.png"
             alt="logo"
             width="75"
           />
+          <!--Title-->
           <h1>Game of Thrones Friend Finder</h1>
         </div>
 
@@ -77,6 +86,7 @@
         <br />
 
         <div>
+          <!--navigate to survey.html after clicking submit button-->
           <a href="/survey"
             ><button type="button" class="btn btn-lg btn-primary">
               <h4>
@@ -86,10 +96,11 @@
           >
         </div>
 
+        <!-- footer section-->
         <footer class="footer">
           <p>
             <a href="/api/friends">API Friends List</a> |
-            <a href="https://jlcoden.github.io/FriendFinder/">GitHub Repo</a>
+            <a href="https://github.com/jlcoden/FriendFinder">GitHub Repo</a>
           </p>
         </footer>
       </div>
