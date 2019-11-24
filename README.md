@@ -29,16 +29,18 @@ The application consists of the following code:
 - apiRoutes.js contains a GET route used to display the JSON of possible friends and contains a POST route with URL /api/friends. This is used to handle compatibility logic
   ![](api_routes.PNG)
 
-friends.js
+**friends.js**
 
 - friends.js contains the friend data
   ![](friends_js.PNG)
 
-**Running the application and navigating to survey**
-![](accessSurveyAndBegin.gif)
+**GIFs of application in use**
 
-**Entering in survey responses and submitting to see results**
-![](submitSurveyGetResults.gif)
+- Running the application and navigating to survey
+  ![](accessSurveyAndBegin.gif)
+
+- Entering in survey responses and submitting to see results
+  ![](submitSurveyGetResults.gif)
 
 **Technologies Used**
 
